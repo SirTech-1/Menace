@@ -25,7 +25,7 @@ OBJ_TEST_FILES := $(addprefix obj/,$(notdir $(TEST_FILES:.cpp=.o)))
 
 SRC_DIR = $(shell pwd)/src
 
-all: Menace
+all: Menace MenaceTesting
 
 Menace: $(OBJ_FILES)
 	$(CXX)  -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
