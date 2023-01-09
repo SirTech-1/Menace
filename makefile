@@ -31,7 +31,7 @@ Menace: $(OBJ_FILES)
 
 obj/%.o: src/%.cpp
 	mkdir -p obj
-	$(CXX) $(CXX_FLAGS) -o $@ $<
+	$(CXX) $(CXX_FLAGS) -c -o $@ $<
 
 clean:
 	rm -rf $(OBJ_TEST_FILES) rm -rf $(OBJ_FILES)
@@ -40,4 +40,4 @@ MenaceTesting: $(OBJ_TEST_FILES)
 	$(CXX) -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
 
 obj/%.o: test/%.cpp
-	$(CXX) $(CC_FLAGS) -I $(SRC_DIR) -o $@ $<
+	$(CXX) $(CC_FLAGS) -I $(SRC_DIR) -c -o $@ $<
