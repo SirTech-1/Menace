@@ -34,7 +34,6 @@ before_script:
   - $CXX --version
   - echo "CXX="$CXX
   - mkdir obj
-  - mkdir MenaceTesting
   
 script: 
   - make
