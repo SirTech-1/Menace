@@ -27,7 +27,7 @@ SRC_DIR = $(shell pwd)/src
 all: Menace MenaceTesting
 
 Menace: $(OBJ_FILES)
-	$(CXX)  -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
+	$(CXX) -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
 
 obj/%.o: src/%.cpp
 	mkdir -p obj
