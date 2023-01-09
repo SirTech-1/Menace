@@ -2,11 +2,11 @@
 
 export MAKEFLAGS=-j3
 
-CXX = g++ -O3
+CXX = g++-5 -O3
 #CXX = clang++-3.6
 
-CXX_FLAGS = -W -Wall -Wcast-qual -std=c++14 -flto
-LD_FLAGS = -Wall -Wcast-qual -std=c++14 -lpthread -flto
+CC_FLAGS = -W -Wall -fno-rtti -ansi -Wshadow -Wextra -fmax-errors=3 -mcmodel=large -m64 -std=c++14 -msse -flto 
+LD_FLAGS = -Wl,--no-as-needed -lpthread -mcmodel=large -m64 -msse -flto
 
 ifeq ($(NO_POPCNT), 1)
     EXTRA_FLAGS += -DNO_POPCNT
