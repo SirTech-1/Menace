@@ -2,6 +2,8 @@
 
 C++ Chess Engine, UCI compliant
 
+## Build Status
+[![Build Status](https://app.travis-ci.com/github/SirTech-1/Menace)]
 
 ## Board representation
 * Bitboards
