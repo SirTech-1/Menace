@@ -23,8 +23,8 @@ addons:
     - libicu52
 
 install:
-  - g++
-  #- if [ "$CXX" = "g++" ]; then export CXX="g++-5"; fi
+  # g++
+  - if [ "$CXX" = "g++" ]; then export CXX="g++"; fi
   
 before_script: 
   # display cpu info
