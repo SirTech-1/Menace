@@ -16,15 +16,3 @@ TEST_CASE( "Retrieve the principal variation", "[pv]" )
 //    search.negaMaxRoot(7);
 //    search.printPvTable(5);
 }
-
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-A
