@@ -2,7 +2,7 @@
 
 export MAKEFLAGS=-j3
 
-CXX = g++-5 -O3
+CXX = g++ -O3
 #CXX = clang++-3.6
 
 CC_FLAGS = -W -Wall -fno-rtti -ansi -Wshadow -Wextra -fmax-errors=3 -mcmodel=large -m64 -std=c++14 -msse -flto 
@@ -25,7 +25,7 @@ OBJ_TEST_FILES := $(addprefix obj/,$(notdir $(TEST_FILES:.cpp=.o)))
 
 SRC_DIR = $(shell pwd)/src
 
-all: Menace MenaceTesting
+all: Menace
 
 Menace: $(OBJ_FILES)
 	$(CXX)  -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
