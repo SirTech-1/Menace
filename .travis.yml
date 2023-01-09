@@ -35,8 +35,8 @@ before_script:
   
 script: 
   - make
-  - ./DeepovTesting 
- # valgrind --leak-check=full --show-reachable=yes --track-origins=yes --error-exitcode=1  ./DeepovTesting exclude:perft
+  - ./MenaceTesting 
+ # valgrind --leak-check=full --show-reachable=yes --track-origins=yes --error-exitcode=1  ./MenaceTesting exclude:perft
   - cd test/EloRegressionTest/
   - ./eloRegressionTest.sh
 
