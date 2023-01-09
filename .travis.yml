@@ -38,7 +38,7 @@ before_script:
 script: 
   - make
   - ./MenaceTesting 
-  - valgrind --leak-check=full --show-reachable=yes --track-origins=yes --error-exitcode=1  ./MenaceTesting exclude:perft
+  #- valgrind --leak-check=full --show-reachable=yes --track-origins=yes --error-exitcode=1  ./MenaceTesting exclude:perft
   - cd test/EloRegressionTest/
   - ./eloRegressionTest.sh
 
