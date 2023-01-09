@@ -5,7 +5,7 @@ export MAKEFLAGS=-j3
 CXX = g++ -O3
 #CXX = clang++-3.6
 
-CC_FLAGS = -W -Wall -fno-rtti -ansi -Wshadow -Wextra -fmax-errors=3 -mcmodel=large -m64 -std=c++14 -msse -flto 
+CC_FLAGS = -W -Wall -fno-rtti -ansi -Wshadow -Wextra -fmax-errors=3 -mcmodel=large -m64 -std=c++11 -msse -flto 
 LD_FLAGS = -Wl,--no-as-needed -lpthread -mcmodel=large -m64 -msse -flto
 
 ifeq ($(NO_POPCNT), 1)
