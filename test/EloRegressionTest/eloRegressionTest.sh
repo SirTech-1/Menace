@@ -9,7 +9,7 @@ if [ ! -f Menace ]; then
 
     echo "Menace not found. Cloning from github and building"
 
-	git clone --depth 1 --branch=master git://github.com/DoctorTech_1/Menace.git LatestRelease/
+	git clone --depth 1 --branch=master git://github.com/SirTech-1/Menace.git LatestRelease/
 	cd LatestRelease/
 	mkdir obj
 
