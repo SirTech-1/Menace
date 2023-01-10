@@ -27,7 +27,7 @@ SRC_DIR = $(shell pwd)/src
 all: Menace MenaceTesting
 	chmod 755 test/EloRegressionTest/eloRegressionTest.sh
 	chmod 755 test/EloRegressionTest/cutechess-cli.sh
-#	test/EloRegressionTest/eloRegressionTest.sh
+	chmod 755 test/EloRegressionTest/cutechess-cli
 
 Menace: $(OBJ_FILES)
 	$(CXX) -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
