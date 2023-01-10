@@ -4,8 +4,8 @@ export MAKEFLAGS=-j3
 
 CXX = g++ -O3
 
-CC_FLAGS = -W -Wall -fno-rtti -ansi -Wshadow -Wextra -mcmodel=large -m64 -std=c++17 -msse -flto 
-LD_FLAGS = -Wl,--no-as-needed -lpthread -mcmodel=large -m64 -std=c++17 -msse -flto
+CC_FLAGS = -W -Wall -fno-rtti -ansi -Wshadow -Wextra -m64 -std=c++17 -msse -flto 
+LD_FLAGS = -Wl,--no-as-needed -lpthread -m64 -std=c++17 -msse -flto
 
 ifeq ($(NO_POPCNT), 1)
     EXTRA_FLAGS += -DNO_POPCNT
@@ -26,6 +26,7 @@ SRC_DIR = $(shell pwd)/src
 
 all: Menace MenaceTesting
 	chmod 755 test/EloRegressionTest/eloRegressionTest.sh
+	chmod 755 test/EloRegressionTest/cutechess-cli.sh
 
 Menace: $(OBJ_FILES)
 	$(CXX) -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
