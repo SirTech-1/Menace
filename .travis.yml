@@ -16,12 +16,14 @@ addons:
     - g++-12
     - valgrind
     - libicu-dev
+    - libicu52
 
 before_install:
   - sudo apt-get -y update
   - sudo apt-get install -y g++12
-  - sudo apt-get install -y valgrind
+#  - sudo apt-get install -y valgrind
   - sudo apt-get install -y libicu-dev
+  - sudo apt-get install -y libicu52
   - sudo apt-get install -y build-essential
   
 install:
