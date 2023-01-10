@@ -31,7 +31,7 @@ if [ ! -f Menace ]; then
 	cd ..
 fi
 
-./cutechess-cli.sh -engine cmd=MenaceCurrent -engine cmd=Menace -each proto=uci tc=100/1+0.01 -rounds 700 -pgnout matchOuput.txt -recover -repeat -openings file=openings.pgn | while read line; do
+./cutechess-cli.sh -engine cmd=MenaceCurrent -engine cmd=Menace -each proto=uci tc=100/1+0.01 -rounds 1000 -pgnout matchOuput.txt -recover -repeat -openings file=openings.pgn | while read line; do
 
 		
 	echo "$line"
