@@ -3,7 +3,7 @@
 echo "Starting ELO testing script"
 
 ##Copying current version to the test folder
-cp ../../Menace MenaceCurrent
+cp Menace ../../MenaceCurrent
 
 if [ ! -f Menace ]; then
 
