@@ -4,7 +4,7 @@ echo "Starting ELO testing script"
 
 ##Copying current version to the test folder
 cp Menace ../../MenaceCurrent
-
+<<comment
 if [ ! -f Menace ]; then
 
     echo "Menace not found. Cloning from github and building"
@@ -30,6 +30,7 @@ if [ ! -f Menace ]; then
 	cp Menace ../Menace
 	cd ..
 fi
+comment
 
 ./cutechess-cli.sh -engine cmd=MenaceCurrent -engine cmd=Menace -each proto=uci tc=100/1+0.01 -rounds 1000 -pgnout matchOuput.txt -recover -repeat -openings file=openings.pgn | while read line; do
 
