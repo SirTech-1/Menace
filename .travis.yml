@@ -1,4 +1,4 @@
-sudo: false
+sudo: required
 
 language: cpp
 
@@ -14,13 +14,13 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-12
-#    - valgrind
-    - libicu-dev
+    #- libicu-dev
 
 before_install:
+  - sudo wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.4_amd64.deb
+  - sudo dpkg -i libicu52_52.1-3ubuntu0.4_amd64.deb
   - sudo apt-get install -y g++12
-#  - sudo apt-get install -y valgrind
-  - sudo apt-get install -y libicu-dev
+#  - sudo apt-get install -y libicu-dev
   - sudo apt-get install -y build-essential
   
 install:
@@ -36,8 +36,7 @@ before_script:
   
 script: 
   - make
-  - ./MenaceTesting 
-#  - valgrind --leak-check=full --show-reachable=yes --track-origins=yes --error-exitcode=1  ./MenaceTesting exclude:perft
+  - ./MenaceTesting
   - cd test/EloRegressionTest/
   - ./eloRegressionTest.sh
 
