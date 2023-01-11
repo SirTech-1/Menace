@@ -15,10 +15,10 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Tables.hpp"
-#include "Types.hpp"
+#include "headers/Tables.hpp"
+#include "headers/Types.hpp"
 #include <algorithm> // For std::min for win64
-#include "BitBoardUtils.hpp"
+#include "headers/BitBoardUtils.hpp"
 
 /* List of tables declarations*/
 U64 Tables::FRONT_SPANS[2][64];

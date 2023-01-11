@@ -15,7 +15,7 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "EvalTables.hpp"
+#include "headers/EvalTables.hpp"
 
 
 namespace EvalTables

@@ -22,16 +22,16 @@
 #include <ctime>
 #include <ratio>
 
-#include "Types.hpp"
-#include "Eval.hpp"
-#include "Search.hpp"
-#include "Board.hpp"
-#include "MoveGen.hpp"
-#include "Move.hpp"
-#include "MagicMoves.hpp"
-#include "Utils.hpp"
-#include "Uci.hpp"
-#include "TT.hpp"
+#include "headers/Types.hpp"
+#include "headers/Eval.hpp"
+#include "headers/Search.hpp"
+#include "headers/Board.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/Move.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/Utils.hpp"
+#include "headers/Uci.hpp"
+#include "headers/TT.hpp"
 
 #define PERFORMANCE_TEST
 

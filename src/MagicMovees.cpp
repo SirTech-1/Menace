@@ -15,7 +15,7 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "MagicMoves.hpp"
+#include "headers/MagicMoves.hpp"
 
 namespace MagicMoves
 {

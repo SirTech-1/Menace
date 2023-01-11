@@ -15,10 +15,10 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Utils.hpp"
-#include "MoveGen.hpp"
-#include "Search.hpp"
-#include "MagicMoves.hpp"
+#include "headers/Utils.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/Search.hpp"
+#include "headers/MagicMoves.hpp"
 
 #include "math.h"
 #include <iostream>

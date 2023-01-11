@@ -15,7 +15,7 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Move.hpp"
+#include "headers/Move.hpp"
 #include <iostream>
 #include <sstream>
 

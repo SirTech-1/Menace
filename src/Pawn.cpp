@@ -15,7 +15,7 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Pawn.hpp"
+#include "headers/Pawn.hpp"
 
 Pawn::Entry pawnsTable[Pawn::HASH_SIZE];
 

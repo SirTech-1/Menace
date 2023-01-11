@@ -15,8 +15,8 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Eval.hpp"
-#include "Board.hpp"
+#include "headers/Eval.hpp"
+#include "headers/Board.hpp"
 
 #include <algorithm>
 

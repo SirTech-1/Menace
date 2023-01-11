@@ -15,9 +15,9 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "MoveOrdering.hpp"
+#include "headers/MoveOrdering.hpp"
 #include <algorithm>
-#include "TT.hpp"
+#include "headers/TT.hpp"
 
 void MoveOrdering::clearKillers()
 {

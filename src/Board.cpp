@@ -15,12 +15,12 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "Board.hpp"
-#include "Utils.hpp"
-#include "BitBoardUtils.hpp"
-#include "MagicMoves.hpp"
-#include "MoveGen.hpp"
-#include "Eval.hpp"
+#include "headers/Board.hpp"
+#include "headers/Utils.hpp"
+#include "headers/BitBoardUtils.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/Eval.hpp"
 
 #include <algorithm>
 

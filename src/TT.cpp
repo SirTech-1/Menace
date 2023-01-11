@@ -15,7 +15,7 @@
     along with Menace.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "TT.hpp"
+#include "headers/TT.hpp"
 
 TT globalTT = TT();
 
