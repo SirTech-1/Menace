@@ -1,23 +1,6 @@
-/*
-    Menace, a UCI chess playing engine.
-
-    Copyright (c) 2023 Paul Flowers
-
-    Menace is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    Menace is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with Menace.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-#include "Search.hpp"
-#include "Eval.hpp"
-#include "TT.hpp"
+#include "headers/Search.hpp"
+#include "headers/Eval.hpp"
+#include "headers/TT.hpp"
 
 #include <chrono>
 #include <ctime>
@@ -480,7 +463,7 @@ void Search::sendInfoToUCI(int alpha)
 	// Send info to uci console
 	std::cout << "info";
 	std::cout << " depth " << myDepth;
-	std::cout << " score cp " << alpha;
+	std::cout << " score " << alpha;
 	std::cout << " nodes " << myMovesSearched;
 	unsigned int nps = 1000 * myMovesSearched / mySearchDurationMS;
 	std::cout << " nps " << nps;
