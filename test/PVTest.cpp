@@ -30,6 +30,6 @@ TEST_CASE( "Retrieve the principal variation", "[pv]" )
     search.printPvTable(2);
     search.printPvTable(5);
 
-    search.negaMaxRoot(7);
+    search.negaMaxRoot(10);
     search.printPvTable(5);
 }
