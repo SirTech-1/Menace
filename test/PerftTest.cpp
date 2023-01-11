@@ -57,16 +57,16 @@ TEST_CASE( "Perft from initial position ", "[perft]")
 		REQUIRE(board.perft(4) == 197281);
 	}
 
-	/*SECTION("Perft 5") working but slow for unit test
+	SECTION("Perft 5")
 	{
 		Board board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 		REQUIRE(board.perft(5) == 4865609);
 	}
-	SECTION("Perft 6") working but slow for unit test
+	SECTION("Perft 6")
 	{
 		Board board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 		REQUIRE(board.perft(6) == 119060324);
-	}*/
+	}
 }
 
 TEST_CASE( "Perft position 2 (Kiwipete)", "[perft]")
@@ -90,14 +90,14 @@ TEST_CASE( "Perft position 2 (Kiwipete)", "[perft]")
 		REQUIRE(board.perft(3) == 97862);
 	}
 
-	/*SECTION("Perft 4") //working but slow for unit test
+	SECTION("Perft 4")
 	{
 		REQUIRE(board.perft(4) == 4085603);
 	}
-	SECTION("Perft 5") working but slow for unit test
+	SECTION("Perft 5")
 	{
 		REQUIRE(board.perft(5) == 193690690);
-	}*/
+	}
 }
 
 TEST_CASE( "Perft position 3 ", "[perft]")
@@ -134,12 +134,12 @@ TEST_CASE( "Perft position 3 ", "[perft]")
 		Board board("8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - -");
 		REQUIRE(board.perft(4) == 43238);
 	}
-	/*
-	SECTION("Perft 5") //working but slow for unit test
+	
+	SECTION("Perft 5")
 	{
 		Board board("8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - -");
 		REQUIRE(board.perft(5) == 674624);
-	}*/
+	}
 }
 
 TEST_CASE( "Perft position 4 ", "[perft]")
@@ -174,16 +174,16 @@ TEST_CASE( "Perft position 4 ", "[perft]")
 		REQUIRE(boardMirrored.perft(3) == 9467);
 	}
 
-	/*SECTION("Perft 4") //working but slow for unit test
+	SECTION("Perft 4")
 	{
 		REQUIRE(board.perft(4) == 422333);
 		REQUIRE(boardMirrored.perft(4) == 422333);
 	}
-	SECTION("Perft 5") //working but slow for unit test
+	SECTION("Perft 5")
 	{
 		REQUIRE(board.perft(5) == 15833292);
 		REQUIRE(boardMirrored.perft(5) == 15833292);
-	}*/
+	}
 }
 
 TEST_CASE( "Perft position 5 ", "[perft]") //Note The ChessProgramming website gives another FEN for this position
@@ -258,12 +258,12 @@ TEST_CASE( "Perft position 6 ", "[perft]")
 		Board board("r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10");
 		REQUIRE(board.perft(3) == 89890);
 	}
-    /*
-	SECTION("Perft 4") //working but slow for unit test
+    
+	SECTION("Perft 4")
 	{
 		Board board("r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10");
 		REQUIRE(board.perft(4) == 3894594);
-	}*/
+	}
 }
 
 TEST_CASE( "Perft Promotion", "[perft]") //Taken from http://www.rocechess.ch/perft.html
@@ -286,17 +286,17 @@ TEST_CASE( "Perft Promotion", "[perft]") //Taken from http://www.rocechess.ch/pe
 	{
 		REQUIRE(board.perft(3) == 9483);
 	}
-	/*
-	SECTION("Perft 4") /working but slow for unit test
+	
+	SECTION("Perft 4")
 	{
 		REQUIRE(board.perft(4) == 182838);
 	}
-	SECTION("Perft 5") //working but slow for unit test
+	SECTION("Perft 5")
 	{
 		REQUIRE(board.perft(5) == 3605103);
 	}
-	SECTION("Perft 6") //working but slow for unit test
+	SECTION("Perft 6")
 	{
 		REQUIRE(board.perft(6) == 71179139);
-	}*/
+	}
 }
