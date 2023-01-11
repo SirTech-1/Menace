@@ -16,8 +16,8 @@
 */
 
 #include "catch.hpp"
-#include "Utils.hpp"
-#include "BitBoardUtils.hpp"
+#include "headers/Utils.hpp"
+#include "headers/BitBoardUtils.hpp"
 
 TEST_CASE( "Conversion string to unsigned int" )
 {

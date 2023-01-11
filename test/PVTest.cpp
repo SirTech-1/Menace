@@ -16,9 +16,9 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "Search.hpp"
-#include "TT.hpp"
+#include "headers/Board.hpp"
+#include "headers/Search.hpp"
+#include "headers/TT.hpp"
 
 TEST_CASE( "Retrieve the principal variation", "[pv]" )
 {

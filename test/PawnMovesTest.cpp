@@ -16,8 +16,8 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "MoveGen.hpp"
+#include "headers/Board.hpp"
+#include "headers/MoveGen.hpp"
 
 
 TEST_CASE( "Pawn moves", "[pawn]" )

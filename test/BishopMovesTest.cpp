@@ -16,9 +16,9 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "MagicMoves.hpp"
-#include "MoveGen.hpp"
+#include "headers/Board.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/MoveGen.hpp"
 
 
 TEST_CASE( "Bishop moves", "[bishop]" )

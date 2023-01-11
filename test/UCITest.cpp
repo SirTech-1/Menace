@@ -16,10 +16,10 @@
 */
 
 #include "catch.hpp"
-#include "Uci.hpp"
-#include "Board.hpp"
-#include "Search.hpp"
-#include "TT.hpp"
+#include "headers/Uci.hpp"
+#include "headers/Board.hpp"
+#include "headers/Search.hpp"
+#include "headers/TT.hpp"
 
 
 TEST_CASE( "Test uci command isready", "[isready]" )
@@ -31,7 +31,7 @@ TEST_CASE( "Test uci command isready", "[isready]" )
 	
     Uci uci;
 //  To verify default options    
-//    uci.printOptions();
+	uci.printOptions();
     
     SECTION("Test TT size during game and clear TT when rematch")
 	{       

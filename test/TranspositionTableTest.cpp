@@ -16,13 +16,13 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "MagicMoves.hpp"
-#include "Move.hpp"
-#include "MoveGen.hpp"
-#include "MoveOrdering.hpp"
-#include "TT.hpp"
-#include "Search.hpp"
+#include "headers/Board.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/Move.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/MoveOrdering.hpp"
+#include "headers/TT.hpp"
+#include "headers/Search.hpp"
 #include <iostream>
 
 

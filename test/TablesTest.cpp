@@ -16,8 +16,8 @@
 */
 
 #include "catch.hpp"
-#include "Tables.hpp"
-#include "Types.hpp"
+#include "headers/Tables.hpp"
+#include "headers/Types.hpp"
 
 TEST_CASE( "Tables" )
 {

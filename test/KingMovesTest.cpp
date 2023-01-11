@@ -16,9 +16,9 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "MoveGen.hpp"
-#include "MagicMoves.hpp"
+#include "headers/Board.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/MagicMoves.hpp"
 #include <bitset>
 
 

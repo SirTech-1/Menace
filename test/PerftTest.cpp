@@ -16,11 +16,11 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "BitBoardUtils.hpp"
-#include "MagicMoves.hpp"
-#include "Tables.hpp"
-#include "MoveGen.hpp"
+#include "headers/Board.hpp"
+#include "headers/BitBoardUtils.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/Tables.hpp"
+#include "headers/MoveGen.hpp"
 
 TEST_CASE( "Perft from initial position ", "[perft]")
 {

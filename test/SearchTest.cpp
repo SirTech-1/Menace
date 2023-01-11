@@ -16,10 +16,10 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "MagicMoves.hpp"
-#include "Search.hpp"
-#include "TT.hpp"
+#include "headers/Board.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/Search.hpp"
+#include "headers/TT.hpp"
 
 
 TEST_CASE( "Don't stalemate if you can win", "[search]" )

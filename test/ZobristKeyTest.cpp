@@ -16,13 +16,13 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "BitBoardUtils.hpp"
-#include "MagicMoves.hpp"
-#include "Tables.hpp"
-#include "MoveGen.hpp"
-#include "Types.hpp"
-#include "Piece.hpp"
+#include "headers/Board.hpp"
+#include "headers/BitBoardUtils.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/Tables.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/Types.hpp"
+#include "headers/Piece.hpp"
 
 
 TEST_CASE( "Zobrist key", "[zobrist]" )

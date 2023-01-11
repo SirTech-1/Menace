@@ -16,11 +16,11 @@
 */
 
 #include "catch.hpp"
-#include "Board.hpp"
-#include "Move.hpp"
-#include "MoveGen.hpp"
-#include "MoveOrdering.hpp"
-#include "Eval.hpp"
+#include "headers/Board.hpp"
+#include "headers/Move.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/MoveOrdering.hpp"
+#include "headers/Eval.hpp"
 
 
 TEST_CASE( "Test move rating", "[moveordering]" )
