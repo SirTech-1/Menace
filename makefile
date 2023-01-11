@@ -24,10 +24,10 @@ OBJ_TEST_FILES := $(addprefix obj/,$(notdir $(TEST_FILES:.cpp=.o)))
 
 SRC_DIR = $(shell pwd)/src
 
-all: chmod 755 test/EloRegressionTest/eloRegressionTest.sh
+all: Menace MenaceTesting
+	chmod 755 test/EloRegressionTest/eloRegressionTest.sh
 	chmod 755 test/EloRegressionTest/cutechess-cli.sh
 	chmod 755 test/EloRegressionTest/cutechess-cli
-	Menace MenaceTesting
 
 Menace: $(OBJ_FILES)
 	$(CXX) -o $@ $^ $(LD_FLAGS) $(EXTRA_FLAGS)
