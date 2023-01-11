@@ -20,6 +20,15 @@ before_install:
   - sudo apt-get install -y g++12
   - sudo apt-get install -y libicu-dev
   - sudo apt-get install -y build-essential
+  # Install Multiarch support 2.27
+  - sudo wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.6_amd64.deb
+  - sudo dpkg -i multiarch-support_2.27-3ubuntu1.6_amd64.deb
+  # Install libicu60
+  - sudo wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu60_60.2-3ubuntu3_amd64.deb
+  - sudo dpkg -i libicu60_60.2-3ubuntu3_amd64.deb
+  # Install libicu52
+  - sudo wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.8_amd64.deb
+  - sudo dpkg -i libicu52_52.1-3ubuntu0.8_amd64.deb
   
 install:
   # g++
