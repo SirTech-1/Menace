@@ -1,6 +1,6 @@
-#include "catch.hpp"
-#include "Eval.hpp"
-#include "Search.hpp"
+#include "headers/Catch.hpp"
+#include "headers/Eval.hpp"
+#include "headers/Search.hpp"
 
 TEST_CASE( "Test the initialisation of EvalTables", "[EvalTables]")
 {

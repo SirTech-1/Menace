@@ -1,5 +1,5 @@
-#include "Eval.hpp"
-#include "Board.hpp"
+#include "headers/Eval.hpp"
+#include "headers/Board.hpp"
 
 #include <algorithm>
 

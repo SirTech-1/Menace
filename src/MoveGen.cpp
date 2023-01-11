@@ -1,7 +1,7 @@
-#include "MoveGen.hpp"
-#include "BitBoardUtils.hpp"
-#include "MagicMoves.hpp"
-#include "Tables.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/BitBoardUtils.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/Tables.hpp"
 
 #include <algorithm>
 #include <memory>

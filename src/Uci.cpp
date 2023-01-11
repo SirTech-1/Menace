@@ -5,12 +5,12 @@
 #include <thread>         // std::thread
 
 
-#include "Board.hpp"
-#include "Move.hpp"
-#include "MoveGen.hpp"
-#include "Uci.hpp"
-#include "Search.hpp"
-#include "TimeManager.hpp"
+#include "headers/Board.hpp"
+#include "headers/Move.hpp"
+#include "headers/MoveGen.hpp"
+#include "headers/Uci.hpp"
+#include "headers/Search.hpp"
+#include "headers/TimeManager.hpp"
 
 
 //Uci documentation:

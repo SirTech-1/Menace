@@ -1,8 +1,8 @@
-#include "catch.hpp"
-#include "Move.hpp"
-#include "BitBoardUtils.hpp"
-#include "MagicMoves.hpp"
-#include "MoveGen.hpp"
+#include "headers/Catch.hpp"
+#include "headers/Move.hpp"
+#include "headers/BitBoardUtils.hpp"
+#include "headers/MagicMoves.hpp"
+#include "headers/MoveGen.hpp"
 
 
 TEST_CASE( "Constructor and methods" )

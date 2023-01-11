@@ -1,4 +1,4 @@
-#include "Pawn.hpp"
+#include "headers/Pawn.hpp"
 
 Pawn::Entry pawnsTable[Pawn::HASH_SIZE];
 

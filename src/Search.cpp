@@ -1,6 +1,6 @@
-#include "Search.hpp"
-#include "Eval.hpp"
-#include "TT.hpp"
+#include "headers/Search.hpp"
+#include "headers/Eval.hpp"
+#include "headers/TT.hpp"
 
 #include <chrono>
 #include <ctime>

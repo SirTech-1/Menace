@@ -1,7 +1,7 @@
-#include "catch.hpp"
-#include "Pawn.hpp"
-#include "Board.hpp"
-#include "MoveGen.hpp"
+#include "headers/Catch.hpp"
+#include "headers/Pawn.hpp"
+#include "headers/Board.hpp"
+#include "headers/MoveGen.hpp"
 
 
 TEST_CASE("Pawn structure")

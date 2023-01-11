@@ -1,6 +1,6 @@
-#include "MoveOrdering.hpp"
+#include "headers/MoveOrdering.hpp"
 #include <algorithm>
-#include "TT.hpp"
+#include "headers/TT.hpp"
 
 void MoveOrdering::clearKillers()
 {

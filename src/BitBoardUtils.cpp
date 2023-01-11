@@ -1,4 +1,4 @@
-#include "BitBoardUtils.hpp"
+#include "headers/BitBoardUtils.hpp"
 
 double BitBoardUtils::measurePopcntSpeed(U64 testBB, unsigned int (*f)(U64))
 {
