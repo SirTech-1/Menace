@@ -1,4 +1,4 @@
-sudo: required
+sudo: false
 
 language: cpp
 
@@ -14,11 +14,13 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-12
+    - valgrind
     - libicu-dev
 
 before_install:
   - sudo apt-get install -y g++12
-  - sudo apt-get install -y libicu-dev
+  #- sudo apt-get install -y valgrind
+  #- sudo apt-get install -y libicu-dev
   - sudo apt-get install -y build-essential
   # Install Multiarch support 2.27
   - sudo wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.6_amd64.deb
@@ -43,7 +45,8 @@ before_script:
   
 script: 
   - make
-  - ./MenaceTesting
+  - ./MenaceTesting 
+  #- valgrind --leak-check=full --show-reachable=yes --track-origins=yes --error-exitcode=1  ./MenaceTesting exclude:perft
   - cd test/EloRegressionTest/
   - ./eloRegressionTest.sh
 

@@ -5,6 +5,11 @@ C++ Chess Engine, UCI compliant
 ## Build Status
 
 [![Build Status](https://app.travis-ci.com/SirTech-1/Menace.svg?branch=main)](https://app.travis-ci.com/SirTech-1/Menace)
+<a href="https://scan.coverity.com/projects/sirtech-1-menace">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/27297/badge.svg"/>
+</a>
+
 
 ## Board representation
 * Bitboards
