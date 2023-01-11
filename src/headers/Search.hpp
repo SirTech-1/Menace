@@ -56,8 +56,11 @@ private:
     2   +-+-|N-2                                     | pvtable[2][0:N-2]
         +--------------------------------------------+
     etc
+
     We stop the pv at null moveCounter
+
     maxPVlength = N - ply
+
     // TODO : fix conflict with hashtable to save the full PV line
     */
 };
