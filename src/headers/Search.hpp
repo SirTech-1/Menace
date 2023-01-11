@@ -12,7 +12,7 @@
 class Search
 {
 public:
-	constexpr static int MAX_DEPTH = 64;
+	constexpr static int MAX_DEPTH = 128; //default 64
 	Search(std::shared_ptr<Board> boardPtr);
 
     void clearSearchData();
