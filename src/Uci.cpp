@@ -1,20 +1,3 @@
-/*
-    Menace, a UCI chess playing engine.
-
-    Copyright (c) 2023 Paul Flowers
-
-    Menace is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    Menace is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with Menace.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 #include <vector>
 #include <iostream>
 #include <sstream>
@@ -22,12 +5,12 @@
 #include <thread>         // std::thread
 
 
-#include "headers/Board.hpp"
-#include "headers/Move.hpp"
-#include "headers/MoveGen.hpp"
-#include "headers/Uci.hpp"
-#include "headers/Search.hpp"
-#include "headers/TimeManager.hpp"
+#include "Board.hpp"
+#include "Move.hpp"
+#include "MoveGen.hpp"
+#include "Uci.hpp"
+#include "Search.hpp"
+#include "TimeManager.hpp"
 
 
 //Uci documentation:
@@ -150,10 +133,10 @@ void Uci::initSearch()
 
 void Uci::init()
 {
-	TimeManager::divider = std::stoi(getOption("timeDivider"));
-	Eval::POSITIONNAL_GAIN_PERCENT = std::stoi(getOption("positionnalGain"));
-	Eval::MOBILITY_GAIN_PERCENT = std::stoi(getOption("mobilityGain"));
-	Eval::PAWN_GAIN_PERCENT = std::stoi(getOption("pawnGain"));
+	// TimeManager::divider = std::stoi(getOption("timeDivider"));
+	// Eval::POSITIONNAL_GAIN_PERCENT = std::stoi(getOption("positionnalGain"));
+	// Eval::MOBILITY_GAIN_PERCENT = std::stoi(getOption("mobilityGain"));
+	// Eval::PAWN_GAIN_PERCENT = std::stoi(getOption("pawnGain"));
 	//apply TT size
     globalTT.init_TT_size(std::stoi(getOption("hash")));
     // init Pawn hashtable

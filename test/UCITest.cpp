@@ -1,25 +1,8 @@
-/*
-    Menace, a UCI chess playing engine.
-
-    Copyright (c) 2023 Paul Flowers
-
-    Menace is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    Menace is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with Menace.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 #include "catch.hpp"
-#include "headers/Uci.hpp"
-#include "headers/Board.hpp"
-#include "headers/Search.hpp"
-#include "headers/TT.hpp"
+#include "Uci.hpp"
+#include "Board.hpp"
+#include "Search.hpp"
+#include "TT.hpp"
 
 
 TEST_CASE( "Test uci command isready", "[isready]" )
@@ -31,7 +14,7 @@ TEST_CASE( "Test uci command isready", "[isready]" )
 	
     Uci uci;
 //  To verify default options    
-	uci.printOptions();
+//    uci.printOptions();
     
     SECTION("Test TT size during game and clear TT when rematch")
 	{       

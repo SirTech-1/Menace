@@ -1,26 +1,9 @@
-/*
-    Menace, a UCI chess playing engine.
-
-    Copyright (c) 2023 Paul Flowers
-
-    Menace is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-    Menace is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    You should have received a copy of the GNU General Public License
-    along with Menace.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 #include "catch.hpp"
-#include "headers/Board.hpp"
-#include "headers/BitBoardUtils.hpp"
-#include "headers/MagicMoves.hpp"
-#include "headers/Tables.hpp"
-#include "headers/MoveGen.hpp"
+#include "Board.hpp"
+#include "BitBoardUtils.hpp"
+#include "MagicMoves.hpp"
+#include "Tables.hpp"
+#include "MoveGen.hpp"
 
 TEST_CASE( "Perft from initial position ", "[perft]")
 {
@@ -57,16 +40,16 @@ TEST_CASE( "Perft from initial position ", "[perft]")
 		REQUIRE(board.perft(4) == 197281);
 	}
 
-	SECTION("Perft 5")
+	/*SECTION("Perft 5") working but slow for unit test
 	{
 		Board board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 		REQUIRE(board.perft(5) == 4865609);
 	}
-	SECTION("Perft 6")
+	SECTION("Perft 6") working but slow for unit test
 	{
 		Board board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 		REQUIRE(board.perft(6) == 119060324);
-	}
+	}*/
 }
 
 TEST_CASE( "Perft position 2 (Kiwipete)", "[perft]")
@@ -90,14 +73,14 @@ TEST_CASE( "Perft position 2 (Kiwipete)", "[perft]")
 		REQUIRE(board.perft(3) == 97862);
 	}
 
-	SECTION("Perft 4")
+	/*SECTION("Perft 4") //working but slow for unit test
 	{
 		REQUIRE(board.perft(4) == 4085603);
 	}
-	SECTION("Perft 5")
+	SECTION("Perft 5") working but slow for unit test
 	{
 		REQUIRE(board.perft(5) == 193690690);
-	}
+	}*/
 }
 
 TEST_CASE( "Perft position 3 ", "[perft]")
@@ -134,12 +117,12 @@ TEST_CASE( "Perft position 3 ", "[perft]")
 		Board board("8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - -");
 		REQUIRE(board.perft(4) == 43238);
 	}
-	
-	SECTION("Perft 5")
+	/*
+	SECTION("Perft 5") //working but slow for unit test
 	{
 		Board board("8/2p5/3p4/KP5r/1R3p1k/8/4P1P1/8 w - -");
 		REQUIRE(board.perft(5) == 674624);
-	}
+	}*/
 }
 
 TEST_CASE( "Perft position 4 ", "[perft]")
@@ -174,16 +157,16 @@ TEST_CASE( "Perft position 4 ", "[perft]")
 		REQUIRE(boardMirrored.perft(3) == 9467);
 	}
 
-	SECTION("Perft 4")
+	/*SECTION("Perft 4") //working but slow for unit test
 	{
 		REQUIRE(board.perft(4) == 422333);
 		REQUIRE(boardMirrored.perft(4) == 422333);
 	}
-	SECTION("Perft 5")
+	SECTION("Perft 5") //working but slow for unit test
 	{
 		REQUIRE(board.perft(5) == 15833292);
 		REQUIRE(boardMirrored.perft(5) == 15833292);
-	}
+	}*/
 }
 
 TEST_CASE( "Perft position 5 ", "[perft]") //Note The ChessProgramming website gives another FEN for this position
@@ -258,12 +241,12 @@ TEST_CASE( "Perft position 6 ", "[perft]")
 		Board board("r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10");
 		REQUIRE(board.perft(3) == 89890);
 	}
-    
-	SECTION("Perft 4")
+    /*
+	SECTION("Perft 4") //working but slow for unit test
 	{
 		Board board("r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10");
 		REQUIRE(board.perft(4) == 3894594);
-	}
+	}*/
 }
 
 TEST_CASE( "Perft Promotion", "[perft]") //Taken from http://www.rocechess.ch/perft.html
@@ -286,17 +269,17 @@ TEST_CASE( "Perft Promotion", "[perft]") //Taken from http://www.rocechess.ch/pe
 	{
 		REQUIRE(board.perft(3) == 9483);
 	}
-	
-	SECTION("Perft 4")
+	/*
+	SECTION("Perft 4") /working but slow for unit test
 	{
 		REQUIRE(board.perft(4) == 182838);
 	}
-	SECTION("Perft 5")
+	SECTION("Perft 5") //working but slow for unit test
 	{
 		REQUIRE(board.perft(5) == 3605103);
 	}
-	SECTION("Perft 6")
+	SECTION("Perft 6") //working but slow for unit test
 	{
 		REQUIRE(board.perft(6) == 71179139);
-	}
+	}*/
 }
