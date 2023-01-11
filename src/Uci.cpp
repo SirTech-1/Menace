@@ -133,10 +133,10 @@ void Uci::initSearch()
 
 void Uci::init()
 {
-	// TimeManager::divider = std::stoi(getOption("timeDivider"));
-	// Eval::POSITIONNAL_GAIN_PERCENT = std::stoi(getOption("positionnalGain"));
-	// Eval::MOBILITY_GAIN_PERCENT = std::stoi(getOption("mobilityGain"));
-	// Eval::PAWN_GAIN_PERCENT = std::stoi(getOption("pawnGain"));
+	TimeManager::divider = std::stoi(getOption("timeDivider"));
+	Eval::POSITIONNAL_GAIN_PERCENT = std::stoi(getOption("positionnalGain"));
+	Eval::MOBILITY_GAIN_PERCENT = std::stoi(getOption("mobilityGain"));
+	Eval::PAWN_GAIN_PERCENT = std::stoi(getOption("pawnGain"));
 	//apply TT size
     globalTT.init_TT_size(std::stoi(getOption("hash")));
     // init Pawn hashtable
@@ -164,7 +164,7 @@ void Uci::loop()
 
 		token.clear(); // getline() could return empty or blank line
 		is >> std::skipws >> token;
-		//	std::cout << token << std::endl;
+		std::cout << token << std::endl;
 
 		if (token == "uci")
 		{
