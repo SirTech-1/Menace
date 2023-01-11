@@ -11,7 +11,7 @@ class TTEntry {
 
 public:
     
-    const static int K = 16; //default is 2
+    const static int K = 64; //default is 2
 
 	TTEntry() : myZkey(0), myBestMove(), myTTInfo(0), myTTvalue(0)
     {
