@@ -33,7 +33,7 @@
 #include "Uci.hpp"
 #include "TT.hpp"
 
-//#define PERFORMANCE_TEST
+#define PERFORMANCE_TEST
 
 
 int main() {

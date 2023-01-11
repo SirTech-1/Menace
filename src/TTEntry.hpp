@@ -28,7 +28,7 @@ class TTEntry {
 
 public:
     
-    const static int K = 2;
+    const static int K = 8;
 
 	TTEntry() : myZkey(0), myBestMove(), myTTInfo(0), myTTvalue(0)
     {
