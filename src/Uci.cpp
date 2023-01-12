@@ -27,7 +27,7 @@ void Uci::updatePosition(std::istringstream& is)
 	if (token == "startpos")
 	{
 		myBoardPtr = std::shared_ptr<Board>(new Board());
-		//is >> token; // Consume "moves" token if any
+		is >> token; // Consume "moves" token if any
 	}
 	else if (token == "fen")
 	{

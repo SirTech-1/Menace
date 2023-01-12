@@ -16,7 +16,7 @@
 #include "headers/Uci.hpp"
 #include "headers/TT.hpp"
 
-//#define PERFORMANCE_TEST
+#define PERFORMANCE_TEST
 
 
 int main() {
