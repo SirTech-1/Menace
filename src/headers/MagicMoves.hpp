@@ -13,13 +13,13 @@ namespace MagicMoves
 	/*********MODIFY THE FOLLOWING IF NECESSARY********/
 	//the default configuration is the best
 
-	//Uncommont either one of the following or none
+	//Uncomment either one of the following or none
 	#define MINIMIZE_MAGIC
 	//#define PERFECT_MAGIC_HASH unsigned short
 
 	//the following works only for perfect magic hash or no defenitions above
 	//it uses variable shift for each square
-	//#define VARIABLE_SHIFT
+	#define VARIABLE_SHIFT
 
 	#define USE_INLINING /*the MMINLINE keyword is assumed to be available*/
 
@@ -28,7 +28,7 @@ namespace MagicMoves
 		#if defined(_MSC_VER) && _MSC_VER<1300
 			typedef unsigned __int64 U64; //For the old microsoft compilers
 		#else
-			//typedef unsigned long long  U64; //Supported by MSC 13.00+ and C99
+			typedef unsigned long long  U64; //Supported by MSC 13.00+ and C99; May comment out
 		#endif //defined(_MSC_VER) && _MSC_VER<1300
 	#endif //__64_BIT_INTEGER_DEFINED__
 	/***********MODIFY THE ABOVE IF NECESSARY**********/
@@ -77,10 +77,10 @@ namespace MagicMoves
 				#define RmagicNOMASK(square, occupancy) *(magicmoves_r_indices[square]+(((occupancy)*magicmoves_r_magics[square])>>magicmoves_r_shift[square]))
 			#endif //USE_INLINING
 
-			//extern U64 magicmovesbdb[5248];
+			extern U64 magicmovesbdb[5248]; //May comment out
 			extern const U64* magicmoves_b_indices[64];
 
-			//extern U64 magicmovesrdb[102400];
+			extern U64 magicmovesrdb[102400]; //May comment out
 			extern const U64* magicmoves_r_indices[64];
 
 		#else //Don't Minimize database size

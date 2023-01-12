@@ -109,7 +109,7 @@ myBitboards(), myAllPieces(), myPinnedPieces(), myCastling(), myHasWhiteCastled(
 	{
 		myMovesCounter = Utils::convertStringToInt(spaceSplit[4]);
 		//  Waiting for a fix for windows! Ahaha a link to the error maybe?
-		//	myMovesCounter = std::stoi(spaceSplit[4]);
+		myMovesCounter = std::stoi(spaceSplit[4]); //possibly need to be commented out
 	}
 	else
 	{
@@ -119,15 +119,15 @@ myBitboards(), myAllPieces(), myPinnedPieces(), myCastling(), myHasWhiteCastled(
 	if (spaceSplit.size() >= 6)
 	{
 		myHalfMovesCounter = Utils::convertStringToInt(spaceSplit[5]);
-		//	myHalfMovesCounter = std::stoi(spaceSplit[5]);
+		myHalfMovesCounter = std::stoi(spaceSplit[5]); //possibly need to be commented out
 	}
 	else
 	{
 		myHalfMovesCounter = 0;
 	}
 
-    // pawnsKey = 0;
-    // key = 0;
+    pawnsKey = 0; //possibly need to be commented out
+    key = 0; //possibly need to be commented out
 }
 
 

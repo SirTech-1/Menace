@@ -247,11 +247,13 @@ int Eval::calcMobilityScore(const int64_t alpha) const
     for (Color color = WHITE; color<COLOR_NB; ++color)
     {
         // King safety to implement..
-        // Color oppositeColor = Utils::getOppositeColor(static_cast<Color>(i));
-        // U64 kingPos = myBoard->getKing(oppositeColor);
-        // Square kingIndex = msb(kingPos);
-        // U64 kingRing = myBoard->getKingAttacks(kingIndex);
-        // ksIndex = 0;
+        /*
+        Color oppositeColor = Utils::getOppositeColor(static_cast<Color>(i));
+        U64 kingPos = myBoard->getKing(oppositeColor);
+        Square kingIndex = msb(kingPos);
+        U64 kingRing = myBoard->getKingAttacks(kingIndex);
+         ksIndex= 0;
+         */
        
         pieceMobility = 0;
         // PAWN : not implemented for now.

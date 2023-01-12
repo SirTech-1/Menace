@@ -1,4 +1,4 @@
-#include "headers/Catch.hpp"
+#include "headers/catch_amalgamated.hpp"
 #include "headers/Pawn.hpp"
 #include "headers/Board.hpp"
 #include "headers/MoveGen.hpp"

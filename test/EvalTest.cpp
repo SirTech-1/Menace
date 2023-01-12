@@ -1,4 +1,4 @@
-#include "headers/Catch.hpp"
+#include "headers/catch_amalgamated.hpp"
 #include "headers/Eval.hpp"
 #include "headers/Search.hpp"
 
@@ -49,7 +49,7 @@ TEST_CASE( "Test the update of material evaluation attributes", "[Eval]")
     std::shared_ptr<Board> sp = std::shared_ptr<Board>(new Board());
     Search search(sp);
     REQUIRE(search.getCurrentScore() == 0);
-    search.negaMaxRoot(7);
+    search.negaMaxRoot(10);
     REQUIRE(search.getCurrentScore() == 0);
 }
 
@@ -58,8 +58,8 @@ TEST_CASE( "Test the update of material evaluation attributes 2", "[Eval]")
     Tables::init();
     std::shared_ptr<Board> sp = std::shared_ptr<Board>(new Board("r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq -"));
     Search search(sp);
-    unsigned int initScore = search.getCurrentScore();
-    search.negaMaxRoot(7);
+    int initScore = search.getCurrentScore(); //add unsigned back if catch complains
+    search.negaMaxRoot(10);
     REQUIRE(search.getCurrentScore() == initScore);
 }
 

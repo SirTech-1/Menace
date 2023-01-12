@@ -1,4 +1,4 @@
-#include "headers/Catch.hpp"
+#include "headers/catch_amalgamated.hpp"
 #include "headers/Move.hpp"
 #include "headers/BitBoardUtils.hpp"
 #include "headers/MagicMoves.hpp"

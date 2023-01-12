@@ -9,7 +9,7 @@ class TT {
 
 public:
 
-    const static int TEST_MB_SIZE = 512; //default is 16
+    const static int TEST_MB_SIZE = 1024; //default is 16
 
 	TT()
     {

@@ -39,7 +39,7 @@ public :
 		// myOptionsMap["positionnalGain"] = UciOption("100", "spin",1,1000);
 		// myOptionsMap["mobilityGain"] = UciOption("100", "spin",1,1000);
 		// myOptionsMap["pawnGain"] = UciOption("100", "spin",1,1000);
-		myOptionsMap["hash"] = UciOption("256", "spin",1,2048); //hash size in MB, default 256 MB
+		myOptionsMap["hash"] = UciOption("1024", "spin",1,2048); //hash size in MB, default 256 MB
 	}
 
 	void loop();

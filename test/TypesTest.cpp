@@ -1,4 +1,4 @@
-#include "headers/Catch.hpp"
+#include "headers/catch_amalgamated.hpp"
 #include "headers/Tables.hpp"
 #include "headers/Board.hpp"
 #include "headers/Types.hpp"

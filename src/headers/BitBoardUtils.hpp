@@ -78,7 +78,7 @@ inline Square msb(const U64 bitboard)
 #endif
 
 	return (Square) idx;
-	//return static_cast<Square>(__builtin_ctzll(bitboard));
+	return static_cast<Square>(__builtin_ctzll(bitboard)); //May need to be recommented out
 }
 
 inline Square lsb(U64 bitboard) { // Assembly code by Heinz van Saanen

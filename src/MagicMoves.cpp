@@ -289,10 +289,9 @@ namespace MagicMoves
 	#define BmagicNOMASK2(square, occupancy) magicmovesbdb[square][((occupancy)*magicmoves_b_magics[square])>>MINIMAL_B_BITS_SHIFT(square)]
 	#define RmagicNOMASK2(square, occupancy) magicmovesrdb[square][((occupancy)*magicmoves_r_magics[square])>>MINIMAL_R_BITS_SHIFT(square)]
 	#endif
-	/*#else
-		#define BmagicNOMASK2(square, occupancy) magicmovesbdb[magicmoves_b_indices[square][((occupancy)*magicmoves_b_magics[square])>>MINIMAL_B_BITS_SHIFT]]
-		#define RmagicNOMASK2(square, occupancy) magicmovesrdb[magicmoves_r_indices[square][((occupancy)*magicmoves_r_magics[square])>>MINIMAL_R_BITS_SHIFT]]
-	 */
+//#else /*Comment out if necessary*/
+	//	#define BmagicNOMASK2(square, occupancy) magicmovesbdb[magicmoves_b_indices[square][((occupancy)*magicmoves_b_magics[square])>>MINIMAL_B_BITS_SHIFT]]
+	//	#define RmagicNOMASK2(square, occupancy) magicmovesrdb[magicmoves_r_indices[square][((occupancy)*magicmoves_r_magics[square])>>MINIMAL_R_BITS_SHIFT]]
 	#endif
 
 	void initmagicmoves(void)

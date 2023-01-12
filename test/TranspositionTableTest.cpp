@@ -1,4 +1,4 @@
-#include "headers/Catch.hpp"
+#include "headers/catch_amalgamated.hpp"
 #include "headers/Board.hpp"
 #include "headers/MagicMoves.hpp"
 #include "headers/Move.hpp"
@@ -55,7 +55,7 @@ TEST_CASE( "Fill transposition table from initial position ", "[TT]")
 
 		std::shared_ptr<Board> sp = std::shared_ptr<Board>(new Board());
 		Search s(sp);
-		s.negaMaxRoot(2);
+		s.negaMaxRoot(10);
 
 		REQUIRE(globalTT.countEntries() > 1);
 		globalTT.clearTT();
@@ -79,7 +79,7 @@ TEST_CASE( "Search results should be the same with or without TT ", "[TT]")
 			std::shared_ptr<Board> sp = std::shared_ptr<Board>(new Board());
 			Search s(sp);
 			s.negaMaxRoot(i);
-			int nodesSearchWithoutTT = s.myMovesSearched;
+			unsigned int nodesSearchWithoutTT = s.myMovesSearched; //Revert to int if necessary
 
 			REQUIRE(globalTT.countEntries() > 0);
 			Move bestMoveNoTT = s.myBestMove;
