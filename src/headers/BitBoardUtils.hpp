@@ -46,7 +46,6 @@ inline unsigned int popcount64swar(U64 i)
           0x0101010101010101) >> 56;
 }
 
-// "Brian Kernighan's way" https://chessprogramming.wikispaces.com/Population+Count
 // efficient for sparse bitboard
 inline unsigned int popcount64sparse(U64 bitboard)
 {
