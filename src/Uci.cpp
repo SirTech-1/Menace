@@ -3,8 +3,6 @@
 #include <sstream>
 #include <math.h>
 #include <thread>         // std::thread
-
-
 #include "headers/Board.hpp"
 #include "headers/Move.hpp"
 #include "headers/MoveGen.hpp"
@@ -27,7 +25,7 @@ void Uci::updatePosition(std::istringstream& is)
 	if (token == "startpos")
 	{
 		myBoardPtr = std::shared_ptr<Board>(new Board());
-		is >> token; // Consume "moves" token if any
+		//is >> token; // Consume "moves" token if any
 	}
 	else if (token == "fen")
 	{
