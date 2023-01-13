@@ -6759,7 +6759,7 @@ namespace Catch {
 
         std::ostream& operator<<( std::ostream& os, Column const& col ) {
             bool first = true;
-            for ( auto line : col ) {
+            for ( auto & line : col ) {
                 if ( first ) {
                     first = false;
                 } else {
@@ -6833,7 +6833,7 @@ namespace Catch {
 
         std::ostream& operator<<( std::ostream& os, Columns const& cols ) {
             bool first = true;
-            for ( auto line : cols ) {
+            for ( auto & line : cols ) {
                 if ( first ) {
                     first = false;
                 } else {

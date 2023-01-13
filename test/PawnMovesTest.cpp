@@ -55,7 +55,7 @@ TEST_CASE( "Pawn en passant with check", "[pawn]" )
 		Move movePawn;
 
 		//Find double push black move
-		for(auto move : moves)
+		for(auto & move : moves)
 		{
 			if(move.getDestination() == SQ_F5)
 			{
