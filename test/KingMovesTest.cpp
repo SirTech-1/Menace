@@ -156,7 +156,7 @@ TEST_CASE( "King castling execude/undo move", "[king]" )
 		auto moves = moveGen.getKingPseudoLegalMoves(WHITE);
 		Move castlingMove;
 
-		for(auto move : moves)
+		for(auto & move : moves)
 		{
 			if(move.isCastling())
 			{

@@ -72,7 +72,7 @@ TEST_CASE( "Pawn en passant with check", "[pawn]" )
 		bool isEpMoveExist = false;
 
 		//Find EP white move
-		for(auto move : moves)
+		for(auto & move : moves)
 		{
 			if(move.getOrigin() == SQ_G5)
 			{
