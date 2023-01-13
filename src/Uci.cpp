@@ -100,7 +100,7 @@ void Uci::printOptions() const{
 	std::cout << "Current options" << std::endl;
 
 
-	for(auto elem : myOptionsMap)
+	for(auto& elem : myOptionsMap)
 	{
 		UciOption uciOption = elem.second;
 
@@ -115,7 +115,7 @@ Move Uci::strToMove(std::string str)
 	std::vector<Move> moves = mg.generateLegalMoves();
 
 
-	for (auto move : moves)
+	for (auto& move : moves)
 	{
 		if(str == move.toShortString()) return move;
 	}

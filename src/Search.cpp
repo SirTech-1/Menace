@@ -192,7 +192,7 @@ int Search::negaMax(const int depth, int alpha, const int beta, const bool isNul
     int bestScore = -999999;
 
     auto moveNumber = 0;
-	for (auto currentMove : moveList)
+	for (auto  & currentMove : moveList)
 	{
 		moveNumber++;
 
@@ -297,7 +297,7 @@ int Search::negaMaxRoot(const int depth)
 	myMoveOrder.rateMoves(moveList, myBoard, myPly, true);
 	myMoveOrder.sortMoves(moveList);
 
-	for (auto currentMove : moveList)
+	for (auto & currentMove : moveList)
 	{
 		myBoard->executeMove(currentMove);
 		myEval.updateEvalAttributes(currentMove);
@@ -383,7 +383,7 @@ int Search::negaMaxRootIterativeDeepening(const unsigned int allocatedTimeMS)
 			myMoveOrder.sortMoves(moveList);
 
 			unsigned int j = 0;
-			for (auto currentMove : moveList)
+			for (auto & currentMove : moveList)
 			{
 				j++;
 
