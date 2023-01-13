@@ -51,7 +51,7 @@ int Search::qSearch(int alpha, const int beta)
 	myMoveOrder.rateMoves(moveList, myBoard, myPly, false);
 	myMoveOrder.sortMoves(moveList);
 
-	for (auto currentMove : moveList)
+	for (auto & currentMove : moveList)
 	{
 		//Continue only for capture moves with SEE > 0
 		if(currentMove.isCapture() && myBoard->seeCapture(currentMove, Utils::getOppositeColor(myBoard->getColorToPlay())) > 0)
