@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Nov  8 21:16:15 2015
-@author: navid
-"""
 
 from scipy.optimize import differential_evolution
 from scipy.optimize import basinhopping

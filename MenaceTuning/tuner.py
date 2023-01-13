@@ -1,4 +1,4 @@
-#! /usr/bin/python3.4
+#! /usr/bin/python3
 #-*- coding: utf-8 -*-
 
 import sys
@@ -28,10 +28,10 @@ def main(argv):
     # Store the run configuration
     settings.main_command,settings.main_config=cutechessConfig(args)
     
-#    if args.verbosity:
-#        print('Sending command to cutechess :')
-#        print(settings.main_command+settings.main_config)
-#        print('\n')
+    if args.verbosity:
+        print('Sending command to cutechess :')
+        print(settings.main_command+settings.main_config)
+        print('\n')
     
     # No input parameters ( for test purpose )
     if args.name is None:

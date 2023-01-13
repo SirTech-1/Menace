@@ -1,8 +1,7 @@
-#!/bin/sh
-
+#!/bin/bash
 #********************************************************************
 # Run 5 matches between Menace and Menace (test)
-#./tuner.py ./Menace ./Menace -d ../ -r 2 -v
+./tuner.py ./Menace ./Menace -d ../ -r 2 -v
 
 
 #********************************************************************
