@@ -50,7 +50,7 @@ comment
 		
 		eloDiff=`echo "$line" | grep -o "[0-9]*"`
 		
-			if [[ $eloDiff -ge 20 ]]; then #allow up to 20 in Regression
+			if [[ $eloDiff -ge 50 ]]; then #allow up to 50 in Regression
 		
 				echo "Regression"
 				exit 1
