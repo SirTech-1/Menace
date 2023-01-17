@@ -28,8 +28,7 @@ TEST_CASE("Pawn structure")
         int gameStage = Eval::TOTAL_MATERIAL;
         int alpha = 0;
         int pawnScore = Pawn::calculateScore(board,gameStage,alpha);
-        int oneBlackDoubledPawn = -(EvalTables::PawnTable[OPENING][Pawn::DOUBLED]*gameStage +
-        EvalTables::PawnTable[ENDGAME][Pawn::DOUBLED]*alpha )/Eval::TOTAL_MATERIAL;
+        int oneBlackDoubledPawn = -(EvalTables::PawnTable[OPENING][Pawn::DOUBLED]*gameStage + EvalTables::PawnTable[ENDGAME][Pawn::DOUBLED]*alpha )/Eval::TOTAL_MATERIAL;
 
         REQUIRE(pawnScore == oneBlackDoubledPawn);
     }

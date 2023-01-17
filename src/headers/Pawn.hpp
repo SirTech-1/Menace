@@ -17,7 +17,8 @@ namespace Pawn
     {
         PASSED = 0,
         DOUBLED = 1,
-        ISOLATED = 2
+        ISOLATED = 2,
+        SUPPORTED = 3
     };
 
     struct Entry {
