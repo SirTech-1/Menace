@@ -6,7 +6,7 @@ void TT::init_TT_size(int sizeMBytes) // Default value TEST_MB_SIZE
 {
     U64 sizeBytes = (U64)sizeMBytes*1024*1024;
     std::size_t entrySize = sizeof(TTEntry);
-    U64 nEntries = sizeBytes / entrySize;
+    U64 nEntries = sizeBytes / (U64)entrySize;
 
     delete [] myTTTable;
     

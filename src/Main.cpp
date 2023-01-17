@@ -4,6 +4,7 @@
     #include <chrono>
     #include <ctime>
     #include <ratio>
+    #include <thread>
 
     #include "headers/Types.hpp"
     #include "headers/Eval.hpp"

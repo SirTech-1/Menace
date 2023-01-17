@@ -11,7 +11,7 @@
 namespace Pawn
 {
 
-    const static int HASH_SIZE = 131072; //default is 16384
+    const static unsigned int HASH_SIZE = 131072; //default is 16384
 
     enum Status
     {
