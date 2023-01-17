@@ -1,6 +1,7 @@
 #include "headers/Move.hpp"
 #include <iostream>
 #include <sstream>
+#include <algorithm>
 
 std::string Move::toShortString() const
 {

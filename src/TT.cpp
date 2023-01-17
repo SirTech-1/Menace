@@ -1,4 +1,5 @@
 #include "headers/TT.hpp"
+#include <algorithm>
 
 TT globalTT = TT();
 

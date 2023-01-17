@@ -1,4 +1,5 @@
 #include "headers/MagicMoves.hpp"
+#include <algorithm>
 
 namespace MagicMoves
 {
