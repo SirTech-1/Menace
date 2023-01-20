@@ -41,7 +41,7 @@ namespace TimeManager
 
 		return allocatedTimeMiliSec;
 	}
-};
+}
 
 
 #endif /* TIMEMANAGER_HPP_ */

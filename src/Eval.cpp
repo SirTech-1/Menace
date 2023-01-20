@@ -71,7 +71,7 @@ int Eval::calculateKingSafety() {
             //queen side castling
             U64 safeArea = 506373483102470144ULL;
 
-            U64 pawnShelter = Tables::MASK_RANK[kingRank-1] & myBoard->getBlackPawns() & safeArea;;
+            U64 pawnShelter = Tables::MASK_RANK[kingRank-1] & myBoard->getBlackPawns() & safeArea;
             kingSafetyScore -= 5*popcount(pawnShelter);
         }
     }

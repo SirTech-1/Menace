@@ -85,12 +85,12 @@ namespace Tables
     U64 pawnAttacks(const Square pos, Color color);
 
     /* Sliding Pieces : !!! these tables does not replace moveGen !!! */
-    inline U64 bishopAttacks(const Square pos){return MagicMoves::Bmagic(pos, 0x0);};
-    inline U64 rookAttacks(const Square pos){return MagicMoves::Rmagic(pos, 0x0);};
+    inline U64 bishopAttacks(const Square pos){return MagicMoves::Bmagic(pos, 0x0);}
+    inline U64 rookAttacks(const Square pos){return MagicMoves::Rmagic(pos, 0x0);}
     inline U64 queenAttacks(const Square pos)
     {
         return  (bishopAttacks(pos) | rookAttacks(pos));
-    };
+    }
 }
 
 

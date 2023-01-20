@@ -100,3 +100,6 @@ cov-int/emit/PAUL-DESKTOP/config/d17f07c3e18cd15bf86c22e8da4a0e8f/g++cc-config-0
 cov-int/output/version
 cov-int/tmp/emit-db-cache
 cov-int/tmp/emit-db-cache.lock
+.idea/misc.xml
+.idea/vcs.xml
+.idea/workspace.xml

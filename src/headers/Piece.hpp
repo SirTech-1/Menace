@@ -49,6 +49,6 @@ namespace Piece
 
     inline PieceType& operator++(PieceType& i) { return i = PieceType(int(i) + 1); }
 
-};
+}
 
 #endif // PIECES_H

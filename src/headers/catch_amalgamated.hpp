@@ -1331,7 +1331,7 @@ namespace Catch {
     } // namespace Benchmark
 } // namespace Catch
 
-#endif // CATCH_OUTLIERS_CLASSIFICATION_HPP_INCLUDED
+#endif // CATCH_OUTLIER_CLASSIFICATION_HPP_INCLUDED
 
 
 #include <map>
@@ -3978,7 +3978,7 @@ namespace Catch {
             }
         }
         friend bool operator!=(Optional const& a, Optional const& b) {
-            return !( a == b );
+            return a != b;
         }
 
     private:

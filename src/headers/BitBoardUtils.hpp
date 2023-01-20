@@ -117,7 +117,7 @@ inline bool areAligned(const Square s1, const Square s2, const Square s3) {
 
 double measurePopcntSpeed(U64 testBB, unsigned int (*f)(U64));
 
-};
+}
 
 //Operator overload for Bitboard and Square
 inline U64 operator&(U64 b, Square s) {

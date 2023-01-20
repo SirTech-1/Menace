@@ -96,7 +96,7 @@ namespace MagicMoves
 			extern U64 magicmovesbdb[64][1<<9];
 			extern U64 magicmovesrdb[64][1<<12];
 
-		#endif //MINIMIAZE_MAGICMOVES
+		#endif //MINIMIZE_MAGIC
 	#else //PERFCT_MAGIC_HASH defined
 		#ifndef MINIMIZE_MAGIC
 
@@ -114,7 +114,7 @@ namespace MagicMoves
 		#else
 			#error magicmoves - MINIMIZED_MAGIC and PERFECT_MAGIC_HASH cannot be used together
 		#endif
-	#endif //PERFCT_MAGIC_HASH
+	#endif //PERFECT_MAGIC_HASH
 
 	#ifdef USE_INLINING
 		static MMINLINE U64 Bmagic(const unsigned int square,const U64 occupancy)
